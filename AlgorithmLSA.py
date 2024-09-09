@@ -1,6 +1,7 @@
 from sklearn.decomposition import TruncatedSVD
 import pandas as pd
 
+
 def LSA_MODEL(tf,vectorizer):
   svd_model = TruncatedSVD(n_components=20, algorithm ='randomized', n_iter=100, random_state=122)
   svd_model.fit(tf)
